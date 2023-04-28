@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import openai
 
 # Set your OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Function to fetch the webpage and extract the content of the target div
 def fetch_directory_search():
