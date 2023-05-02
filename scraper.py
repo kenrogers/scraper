@@ -33,7 +33,7 @@ st.title("Washington Premier Football Club Analysis")
 website_text = fetch_website_info()
 
 # Prepare the OpenAI API prompt
-prompt = f"The following text is a description of a sports club. Based on the information given, list out the key competitive achievements of the organization :\n\n{website_text}"
+prompt = f"The following text is a description of a sports club. Based on the information given, list out the key competitive achievements of the organization. Only include achievements that are relevant to competitions and a focus on producing high-quality athletes:\n\n{website_text}"
 
 # Call the OpenAI API
 extracted_info = query_openai_api(prompt)
